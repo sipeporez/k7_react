@@ -1,8 +1,9 @@
 import './App.css';
 // import MyClock from './02/MyClock';
-import MyDiv from './03/MyDiv';
-import logo from './logo.svg'
 import { AiFillHome } from "react-icons/ai";
+// import MyDiv from './03/MyDiv';
+// import MyList from './04/MyList';
+import Lotto from './05/Lotto';
 
 
 
@@ -11,12 +12,16 @@ function App() {
     <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
       <header className="flex justify-between items-center text-2xl font-bold p-10 bg-slate-200">
         <div>리액트 실습</div>
-        <div><AiFillHome className='text-3xl text-zinc-700' /></div>
+        <p><AiFillHome className='text-3xl text-zinc-700' /></p>
       </header>
-      <main className="grow">
-        <div className="flex justify-center items-center">
-          <img src={logo} className="App-logo" alt="logo"/>
-        </div>
+      <main className='grow flex justify-center items-center'>
+        {/* <div className='flex justify-center items-center w-1/3 h-1/2'>
+          <img src={logo} alt="logo" />
+        </div> */}
+
+        {/* <MyDiv /> */}
+        {/* <MyList /> */}
+        <Lotto />
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
         ⓒ 2024 kimseongwoo. All rights reserved.
