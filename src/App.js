@@ -3,7 +3,8 @@ import './App.css';
 import { AiFillHome } from "react-icons/ai";
 // import MyDiv from './03/MyDiv';
 // import MyList from './04/MyList';
-import Lotto from './05/Lotto';
+// import Lotto from './05/Lotto';
+import BoxOffice from './06/BoxOffice';
 
 
 
@@ -21,7 +22,8 @@ function App() {
 
         {/* <MyDiv /> */}
         {/* <MyList /> */}
-        <Lotto />
+        {/* <Lotto /> */}
+        <BoxOffice/>
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
         ⓒ 2024 kimseongwoo. All rights reserved.
