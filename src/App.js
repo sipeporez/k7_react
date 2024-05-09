@@ -1,11 +1,10 @@
 import './App.css';
-// import MyClock from './02/MyClock';
+import MyClock from './02/MyClock';
 import { AiFillHome } from "react-icons/ai";
 // import MyDiv from './03/MyDiv';
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
-import BoxOffice from './06/BoxOffice';
-
+// import BoxOffice from './06/BoxOffice';
 
 
 function App() {
@@ -19,11 +18,11 @@ function App() {
         {/* <div className='flex justify-center items-center w-1/3 h-1/2'>
           <img src={logo} alt="logo" />
         </div> */}
-
+        <MyClock />
         {/* <MyDiv /> */}
         {/* <MyList /> */}
         {/* <Lotto /> */}
-        <BoxOffice/>
+        {/* <BoxOffice/> */}
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
         ⓒ 2024 kimseongwoo. All rights reserved.
