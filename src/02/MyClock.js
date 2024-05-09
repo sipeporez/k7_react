@@ -3,9 +3,9 @@ import MyClockTime from "./MyClockTime";
 
 function MyClock() {
     return (
-        <header className="App-header">
+        <header className="flex flex-col justify-center items-center bg-slate-600 w-full h-full">
             <div>
-        <MyClockImage/>
+        <MyClockImage className="w-full h-full"/>
         <MyClockTime/>
         </div>
         </header>

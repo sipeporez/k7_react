@@ -1,24 +1,26 @@
 import "./MyClock.css";
-import style from './My.module.css';
-
+import { useEffect, useState } from "react";
 
 function MyClockTime() {
     const now = new Date();
-    const nowStr = now.toLocaleTimeString();
-    const gubun = nowStr.substring(0, 2);
-    // const st = {
-    //     color:"yellow",
-    //     fontWeight: "bold"
-    // };
+
+    const [ctime, setCtime] = useState(now);
+
+    useEffect(() => {
+        const tm = setInterval(() => setCtime(new Date()), 1000);
+
+        return () => {
+            clearInterval(tm);
+        }
+    }, [])
+
 
     return (
-        <>
-            {/* <div className={(gubun == "오전")? "div1": "div2"}> */}
-                {/* <div style={st}> */}
-                    <div className={style.c1}> {nowStr}</div>
-                {/* </div> */}
-            {/* </div> */}
-        </>
+        <div className="flex justify-center items-center">
+            <div className="text-white font-bold text-4xl mt-10">
+                {ctime.toLocaleTimeString()}
+            </div>
+        </div>
     );
 }
 export default MyClockTime;
