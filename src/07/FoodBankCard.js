@@ -3,6 +3,7 @@ import busan from './img/busan.png'
 import market from './img/market.png'
 import { useState } from 'react'
 
+// Button으로부터 FoodData 프롭 전달받음
 export default function FoodBankCard({ FoodData }) {
     // 전화번호 클릭시 표시/비표시 전환용 state, 기본값은 비표시
     const [isShow, setisShow] = useState(false);
