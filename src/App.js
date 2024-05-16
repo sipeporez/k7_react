@@ -6,9 +6,8 @@ import { AiFillHome } from "react-icons/ai";
 // import Lotto from './05/Lotto';
 // import BoxOffice from './06/BoxOffice';
 // import FoodBankMain from './07/FoodBankMain';
-// import TrafficMain from './08/TrafficMain';
-// import TrafficNav from './08_1/TrafficNav';
-import Traffic from './08_1/Traffic';
+// import Traffic from './08_1/Traffic';
+import MyRef from './09/MyRef';
 
 function App() {
   return (
@@ -21,15 +20,15 @@ function App() {
         {/* <div className='flex justify-center items-center w-1/3 h-1/2'>
           <img src={logo} alt="logo" />
         </div> */}
-        {/* <MyClock /> */}
-        {/* <MyDiv /> */}
-        {/* <MyList /> */}
-        {/* <Lotto /> */}
-        {/* <BoxOffice/> */}
-        {/* <FoodBankMain /> */}
-        {/* <TraficMain /> */}
-        {/* <TraficNav /> */}
-        <Traffic />
+        {/* <MyClock />
+        <MyDiv />
+        <MyList />
+        <Lotto />
+        <BoxOffice/>
+        <FoodBankMain />
+        <Traffic /> */}
+        <MyRef />
+
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
         ⓒ 2024 kimseongwoo. All rights reserved.
