@@ -5,7 +5,10 @@ import { AiFillHome } from "react-icons/ai";
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
 // import BoxOffice from './06/BoxOffice';
-import FoodBankMain from './07/FoodBankMain';
+// import FoodBankMain from './07/FoodBankMain';
+import TrafficMain from './08/TraficMain';
+import TrafficNav from './08_1/TrafficNav';
+import Traffic from './08_1/Traffic';
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
         {/* <MyList /> */}
         {/* <Lotto /> */}
         {/* <BoxOffice/> */}
-        <FoodBankMain />
+        {/* <FoodBankMain /> */}
+        {/* <TraficMain /> */}
+        {/* <TraficNav /> */}
+        <Traffic />
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
         ⓒ 2024 kimseongwoo. All rights reserved.
