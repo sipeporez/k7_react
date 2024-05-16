@@ -6,8 +6,8 @@ import { AiFillHome } from "react-icons/ai";
 // import Lotto from './05/Lotto';
 // import BoxOffice from './06/BoxOffice';
 // import FoodBankMain from './07/FoodBankMain';
-import TrafficMain from './08/TraficMain';
-import TrafficNav from './08_1/TrafficNav';
+// import TrafficMain from './08/TrafficMain';
+// import TrafficNav from './08_1/TrafficNav';
 import Traffic from './08_1/Traffic';
 
 function App() {

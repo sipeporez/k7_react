@@ -1,4 +1,3 @@
-import { useState } from "react"
 import ButtonC from "../ui/ButtonC"
 
 export default function TraficNav({ title, c, sel, setSel }) {
