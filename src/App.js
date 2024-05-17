@@ -4,10 +4,11 @@ import { AiFillHome } from "react-icons/ai";
 // import MyDiv from './03/MyDiv';
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
-import BoxOffice from './06/BoxOffice';
+// import BoxOffice from './06/BoxOffice';
 // import FoodBankMain from './07/FoodBankMain';
 // import Traffic from './08_1/Traffic';
 // import MyRef from './09/MyRef';
+import Gallery from './10/Gallery'
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
         {/* <MyDiv /> */}
         {/* <MyList /> */}
         {/* <Lotto /> */}
-        <BoxOffice />
+        {/* <BoxOffice /> */}
         {/* <FoodBankMain /> */}
         {/* <Traffic /> */}
         {/* <MyRef /> */}
+        <Gallery />
 
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
