@@ -14,9 +14,9 @@ export default function BoxOfficeTbody({ dailylist, setselMv }) {
 
     const mvlist = dailylist.map(item =>
         <tr key={item.movieCd}
-        // tr 1행 클릭 시 item 전체를 handleMvSelect 함수에 전달
+            // tr 1행 클릭 시 item 전체를 handleMvSelect 함수에 전달
             onClick={() => handleMvSelect(item)}
-            className="border-b border-neutral-200 hover:bg-neutral-100">
+            className="w-full border-b border-neutral-200 hover:bg-neutral-100">
             <td className="whitespace-nowrap px-1 py-4 font-medium text-center">{item.rank}</td>
             <td className="whitespace-nowrap px-6 py-4">{item.movieNm}</td>
             <td className="whitespace-nowrap px-6 py-4 text-right">{item.salesAcc.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</td>
