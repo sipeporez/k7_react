@@ -8,7 +8,8 @@ import { AiFillHome } from "react-icons/ai";
 // import FoodBankMain from './07/FoodBankMain';
 // import Traffic from './08_1/Traffic';
 // import MyRef from './09/MyRef';
-import Gallery from './10/Gallery'
+// import Gallery from './10/Gallery'
+import BusanFestival from './11/BusanFestival';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         {/* <FoodBankMain /> */}
         {/* <Traffic /> */}
         {/* <MyRef /> */}
-        <Gallery />
+        {/* <Gallery /> */}
+        <BusanFestival />
 
       </main>
       <footer className="flex justify-center items-center text-white bg-slate-700 h-20">
