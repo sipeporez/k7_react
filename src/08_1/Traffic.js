@@ -14,7 +14,7 @@ export default function Traffic() {
 
     // useEffect - DOM 완성시 무조건 1번 실행 ([])
     useEffect(() => {
-        let url = `https://api.odcloud.kr/api/15070282/v1/uddi:00e5cb5a-ecdf-4190-a499-ba3a6b2a8db9?page=1&perPage=17&returnType=json&serviceKey=${process.env.REACT_APP_API_KEY}`;
+        let url = `https://api.odcloud.kr/api/15070282/v1/uddi:00e5cb5a-ecdf-4190-a499-ba3a6b2a8db9?page=1&perPage=17&returnType=json&serviceKey=${process.env.REACT_APP_TRAFFIC_KEY}`;
         //함수로 url 전달
         getFetchData(url);
     }, [])
