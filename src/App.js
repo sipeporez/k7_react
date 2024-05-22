@@ -13,6 +13,8 @@ import Traffic from './08_1/Traffic';
 import Gallery from './10/Gallery'
 import BusanFestival from './11/BusanFestival';
 // import RouteMain from './12/RouteMain';
+import FrcstMain from './13/FrcstMain';
+import FrcstList from './13/FrcstList';
 
 function App() {
   return (
@@ -43,6 +45,9 @@ function App() {
               <li className='hover:text-slate-400'>
                 <Link to='/busanFest'>부산축제</Link>
               </li>
+              <li className='hover:text-slate-400'>
+                <Link to='/Frcst'>단기예보</Link>
+              </li>
             </ul>
           </div>
           <p><Link to='/'><AiFillHome className='text-3xl text-zinc-700 hover:text-zinc-400' /></Link></p>
@@ -53,6 +58,7 @@ function App() {
         </div> */}
 
           <Routes>
+            {/* 라우팅을 위한 경로 정보 저장 */}
             <Route path='/' element={<MyClock />}></Route>
             {/* <MyDiv /> */}
             {/* <MyList /> */}
@@ -63,6 +69,8 @@ function App() {
             <Route path='/traffic' element={<Traffic />}></Route>
             <Route path='/gallery' element={<Gallery />}></Route>
             <Route path='/busanFest' element={<BusanFestival />}></Route>
+            <Route path='/Frcst' element={<FrcstMain />}></Route>
+            <Route path='/FrcstLi' element={<FrcstList />}></Route>
             {/* <RouteMain /> */}
           </Routes>
         </main >

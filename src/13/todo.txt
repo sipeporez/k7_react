@@ -1,0 +1,5 @@
+baseTime - 0500 고정
+
+TailTable 컴포넌트 만들기
+
+item.baseDate, item.baseTime, item.fcstDate, item.fcstTime, item.fcstValue
