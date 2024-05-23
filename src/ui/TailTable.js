@@ -1,9 +1,9 @@
-export default function TailTable(head, body) {
+export default function TailTable({ head, body }) {
     const thead = head.map(item =>
-        <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500">{item}</th>)
+        <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500" key={item}>{item}</th>)
 
     const tbody = body.map(item =>
-        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{item}</td>)
+        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800" key={item}>{item}</td>)
 
 
     return (

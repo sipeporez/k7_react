@@ -23,7 +23,6 @@ export default function FrcstMain() {
 
     // 셀렉트박스로 지역 출력
     const xyData = getXY.map(item => item["1단계"])
-    console.log(xyData)
 
     // 셀렉트박스 선택시 실행
     const handleChange = () => {
@@ -33,11 +32,11 @@ export default function FrcstMain() {
             .map(item => item["격자 Y"])
         let loc = getXY.filter((item) => item["1단계"] === selRef.current.value)
             .map(item => item["1단계"])
+
         setGetX(nx)
         setGetY(ny)
         setGetLoc(loc)
     }
-    console.log(getX, getY, getLoc, getDate)
 
     // 오늘 날짜 생성
     const today = new Date();
@@ -61,28 +60,28 @@ export default function FrcstMain() {
     // 버튼 클릭
     const handleClick = (e) => {
         if (!getDate) {
-            alert("날짜를 선택해주세요")
+            alert("올바른 날짜를 선택해주세요")
             selDate.current.focus()
             return;
         }
-        else if (!getX) {
+        else if (!getX || (getX && getY == [])) {
             alert("지역을 선택해주세요")
             selRef.current.focus()
             return;
         }
         else {
-            navigate(`/FrcstLi?item1=${getDate}&item2=${getX}&item3=${getY}&item4=${e}`)
+            navigate(`/FrcstLi?item1=${getDate}&item2=${getX}&item3=${getY}&item4=${e}&item5=${getLoc}`)
         }
     }
 
     return (
-        <div className="flex flex-col w-4/5">
+        <div className="flex flex-col w-4/5 justify-center items-center">
             <div className="flex w-full justify-center gap-10">
                 <form>
                     <div className="flex w-full justify-end items-center mb-3">
                         <input
                             type="date" className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm 
-                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block ps-10 p-2.5"
+                            rounded-lg focus:ring-blue-500 focus:border-blue-500  ps-10 p-2.5"
                             id="datepick"
                             ref={selDate}
                             onChange={handleSelect}></input>
