@@ -3,7 +3,13 @@ export default function FrcstTbody({ datalist, category }) {
     const sky = { "1": "맑음", "3": "구름많음", "4": "흐림" }
     const pty = { "0": "없음", "1": "비", "2": "비/눈", "3": "눈", "4": "소나기", "5": "빗방울", "6": "빗방울눈날림", "7": "눈날림" }
     const vec = { 0: "북", 1: "북북동", 2: "북동", 3: "동북동", 4: "동", 5: "동남동", 6: "남동", 7: "남남동", 8: "남", 9: "남남서", 10: "남서", 11: "서남서", 12: "서", 13: "서북서", 14: "북서", 15: "북북서", 16: "북" }
-
+    // const rn1 = {
+    //     "1.0mm 미만": value => value >= 0.1 && value < 1.0,
+    //     "실수값+mm": value => value >= 1.0 && value < 30.0,
+    //     "30.0~50.0mm": value => value >= 30.0 && value < 50.0,
+    //     "50.0mm 이상": value => value >= 50.0,
+    //     "범위 밖의 값": value => value < 0.1 // 추가된 범위
+    // };
 
     const bodylist = datalist.map(item =>
         <tr className="odd:bg-white even:bg-gray-100 hover:bg-gray-100"

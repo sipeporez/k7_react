@@ -1,6 +1,6 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import getXY from "./getxy.json" // 셀렉박스로 넘겨줄것 
-import { useState, useEffect, useRef } from "react"
+import { useState, useRef } from "react"
 import ButtonC from "../ui/ButtonC"
 import TailSelect from "../ui/TailSelect"
 
