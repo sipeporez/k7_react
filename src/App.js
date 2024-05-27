@@ -15,16 +15,18 @@ import BusanFestival from './11/BusanFestival';
 // import RouteMain from './12/RouteMain';
 import FrcstMain from './13/FrcstMain';
 import FrcstList from './13/FrcstList';
+import RecoilMain from './14/RecoilMain';
+import Rest from './15/Rest';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
-        <header className="flex justify-between items-center text-2xl font-bold p-10 bg-slate-200">
-          <div className='w-1/5'>리액트 실습</div>
+        <header className="flex justify-between items-center font-bold max-sm:p-4 max-md:p-6 p-8 bg-slate-200">
+          <div className='flex max-md:text-xl text-2xl'>리액트 실습</div>
           <div className='flex justify-end w-4/5 mr-5'>
-            <ul className='flex gap-4 min-[320px]:text-xs sm:text-sm md:text-xl lg:text-2xl'>
-              <li className='hover:text-slate-400'>
+            <ul className='flex w-full items-center justify-between max-[320px]:text-xs max-sm:text-sm max-md:text-base text-xl '>
+              <li className='hover:text-slate-400 '>
                 <Link to='/'>시계</Link>
               </li>
               <li className='hover:text-slate-400'>
@@ -47,6 +49,12 @@ function App() {
               </li>
               <li className='hover:text-slate-400'>
                 <Link to='/Frcst'>단기예보</Link>
+              </li>
+              <li className='hover:text-slate-400'>
+                <Link to='/recoil'>Recoil</Link>
+              </li>
+              <li className='hover:text-slate-400'>
+                <Link to='/rest'>Rest</Link>
               </li>
             </ul>
           </div>
@@ -71,6 +79,8 @@ function App() {
             <Route path='/busanFest' element={<BusanFestival />}></Route>
             <Route path='/Frcst' element={<FrcstMain />}></Route>
             <Route path='/FrcstLi' element={<FrcstList />}></Route>
+            <Route path='/recoil' element={<RecoilMain />}></Route>
+            <Route path='/rest' element={<Rest />}></Route>
             {/* <RouteMain /> */}
           </Routes>
         </main >

@@ -1,8 +1,0 @@
-baseTime - 0500 고정
-
-
-item.baseDate,
-item.baseTime,
-item.fcstDate,
-item.fcstTime,
-item.fcstValue
